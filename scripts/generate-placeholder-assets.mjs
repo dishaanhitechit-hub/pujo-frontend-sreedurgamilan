@@ -5,7 +5,7 @@
  * These are intentional art-direction placeholders — not fake content.
  * Replace with real photography when the client provides it.
  *
- * Requires: sharp (npm i -g sharp OR node_modules has it)
+ * Requires: sharp (npm i -g sharp OR node_modules has it.)
  */
 
 import { createRequire } from 'module'
