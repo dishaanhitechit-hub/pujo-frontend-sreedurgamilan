@@ -1,4 +1,4 @@
-name: Deploy Pujo Frontend
+name: Deploy Pujo Frontend Sreedurgamilan
 
 on:
   push:
@@ -16,9 +16,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /srv/pujo-frontend
+            cd /srv/pujo-frontend-sreedurga
             git pull origin main
             npm install --production=false
-            rm -rf .next
             npm run build
-            sudo systemctl restart pujo-frontend.service
+            sudo systemctl restart pujo-frontend-sreedurga.service
