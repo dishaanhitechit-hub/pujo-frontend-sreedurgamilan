@@ -356,6 +356,7 @@ export interface User {
   memberCategory: MemberCategory | null
   memberSince: string | null
   memberId: string | null
+  photoUrl: string | null
   permissions?: string[]
   createdAt: string
 }
@@ -1073,6 +1074,7 @@ export interface CreateUserInput {
   address?: string | null
   password: string
   canCollect?: boolean
+  photoUrl?: string | null
 }
 
 export interface UpdateUserInput {
@@ -1088,6 +1090,7 @@ export interface UpdateUserInput {
   password?: string
   isActive?: boolean
   canCollect?: boolean
+  photoUrl?: string | null
 }
 
 // ── Self Contributions ─────────────────────────────────────────────────
